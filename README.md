@@ -1,0 +1,1 @@
+# Aprendizaje-Autom-tico-Parcial-2026
