@@ -1,7 +1,8 @@
 ## Parcial Aprendizaje Automático
 
 # VIDEO: 
-https://drive.google.com/file/d/1vFB2HqSpM3axLKdPmdDNpv0bewfU4xf1/view?usp=sharing
+https://drive.google.com/file/d/1d6ZIqFShZ84ZzJFeuRQwD7MGD2MSuZWA/view?usp=drive_link
+
 
 ### Alumno: Alderete Tomás
 
