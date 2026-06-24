@@ -116,16 +116,16 @@ Los datos tampoco presentan una concentración ningún género en particular
 ### Mejor Modelo de Predicción : 
 Arbol de decisión del Objetivo1:
 
-<img width="436" height="207" alt="image" src="https://github.com/user-attachments/assets/0d3bfa75-8a6b-4ea2-8534-10ff6d2c4d9f" />
+<img width="516" height="241" alt="image" src="https://github.com/user-attachments/assets/258644f3-ed97-4432-91ba-3ff55aea57cf" />
 
 Conclusión: 
 Luego de aplicar reglas en los síntomas, y de utilizar un data set nuevo y aleatorio, para poder poner a prueba, este mismo empezó a detectar patrones teniendo casi un 90% de precisión
-Y también podemos observar que llegó a un poco más de 85 de promedio, lo que para la rama de salud es un resultado muy positivo.
+Y también podemos observar que llegó a un poco más de 75% de promedio, lo que para la rama de salud es un resultado muy positivo.
 
 ### Peor Modelo de Predicción:
 Arbol de decisión del Objetivo2:
 
-<img width="446" height="175" alt="image" src="https://github.com/user-attachments/assets/f0753629-75ab-4d37-8c4d-ae2ff32fd10f" />
+<img width="499" height="206" alt="image" src="https://github.com/user-attachments/assets/eed49e4e-a73f-4f2e-b5b1-221cabed6f3b" />
 
 Este modelo es el peor ya que tiene un mal promedio de predicción y a su vez encontramos que es muy similar a intentar predecir con azar. Esto se debe a que el objetivo en sí, está mal planteado, estoy observando sintomas del presente y queriendo adivinar el futuro, cosa que en la rama de salud es muy cambiante.
 La idea que intenté plantear es muy interesante pero el resultado contiene muchos fallos
