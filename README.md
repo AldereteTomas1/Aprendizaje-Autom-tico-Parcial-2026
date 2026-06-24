@@ -7,18 +7,10 @@ Project Organization
 ------------
 
     ├── LICENSE
-    ├── Makefile           <- Makefile with commands like `make data` or `make train`
     ├── README.md          <- The top-level README for developers using this project.
     ├── data
-    │   ├── external       <- Data from third party sources.
-    │   ├── interim        <- Intermediate data that has been transformed.
     │   ├── processed      <- The final, canonical data sets for modeling.
     │   └── raw            <- The original, immutable data dump.
-    │
-    ├── docs               <- A default Sphinx project; see sphinx-doc.org for details
-    │
-    ├── models             <- Trained and serialized models, model predictions, or model summaries
-    │
     ├── notebooks          <- Jupyter notebooks. Naming convention is a number (for ordering),
     │                         the creator's initials, and a short `-` delimited description, e.g.
     │                         `1.0-jqp-initial-data-exploration`.
@@ -26,32 +18,147 @@ Project Organization
     ├── references         <- Data dictionaries, manuals, and all other explanatory materials.
     │
     ├── reports            <- Generated analysis as HTML, PDF, LaTeX, etc.
-    │   └── figures        <- Generated graphics and figures to be used in reporting
-    │
-    ├── requirements.txt   <- The requirements file for reproducing the analysis environment, e.g.
-    │                         generated with `pip freeze > requirements.txt`
-    │
-    ├── setup.py           <- makes project pip installable (pip install -e .) so src can be imported
-    ├── src                <- Source code for use in this project.
-    │   ├── __init__.py    <- Makes src a Python module
-    │   │
-    │   ├── data           <- Scripts to download or generate data
-    │   │   └── make_dataset.py
-    │   │
-    │   ├── features       <- Scripts to turn raw data into features for modeling
-    │   │   └── build_features.py
-    │   │
-    │   ├── models         <- Scripts to train models and then use trained models to make
-    │   │   │                 predictions
-    │   │   ├── predict_model.py
-    │   │   └── train_model.py
-    │   │
-    │   └── visualization  <- Scripts to create exploratory and results oriented visualizations
-    │       └── visualize.py
-    │
-    └── tox.ini            <- tox file with settings for running tox; see tox.readthedocs.io
+         └── figures        <- Generated graphics and figures to be used in reporting
 
 
 --------
 
 <p><small>Project based on the <a target="_blank" href="https://drivendata.github.io/cookiecutter-data-science/">cookiecutter data science project template</a>. #cookiecutterdatascience</small></p>
+
+
+
+## Parcial Aprendizaje Automático
+
+# VIDEO: 
+https://drive.google.com/file/d/1vFB2HqSpM3axLKdPmdDNpv0bewfU4xf1/view?usp=sharing
+
+### Alumno: Alderete Tomás
+
+## Modelo de Predicción: Árbol de Decisión
+
+## Objetivo: 
+
+Crear un modelo de aprendizaje que pueda detectar si un paciente con Hepatitis C, tiene el síntoma de Ictericia a partir de la información de los demás síntomas.
+
+## Objetivo2: 
+
+Crear un modelo de aprendizaje que pueda detectar si un paciente fué curado en la semana 12 del tratamiento. 
+
+
+### Pasos:
+1. Importar las librerías de Python:
+   - Pandas
+   - Numpy
+   - Matplotlib
+   - Seaborn
+   - Sklearn 
+
+2. Realizar un análisis exploratorio de los datos:
+   - Previsualización del dataset
+   - Visualización de los Tipos de datos
+   - Matriz de Correlación
+
+3. Modificación del dataset:
+   - Cambio de Nombres de columnas (traducción de Inglés a Español)
+   - Eliminación de Columnas no utilizadas en el estudio 
+   - Transformación de tipos Datos
+   - Conteo de Nulos
+
+4. EDA
+   - Frecuencia de Edad
+   - Frecuencia de los datos según género 
+
+5. Objetivo 1:
+   - Árbol de Decisión con metricas estandar
+   - Árbol de Decisión con metricas mejoradas (con umbral bajo)
+   - Árbol de Decisión con Reglas y umbral
+  
+6. Objetivo 2:
+   - Árbol de Decisión con metricas estandar
+
+7. Conclusiones:
+   - Interpretación de los Resultados
+  
+
+
+### Dataset:
+Columnas: 23
+Registros: 1385
+
+Información:
+- Información del Paciente
+- Sintomas
+- Análisis / Estudios medicos
+
+Columnas del dataset:
+- Edad
+- Género
+- IMC 
+- Fiebre
+- Vómitos
+- Dolor de Cabeza 
+- Diarrea
+- Fatiga y Dolor de Huesos
+- Ictericia
+- Dolor epigástrico
+- Glóbulos blancos
+- Glóbulos rojos
+- Hemoglobina
+- Plaquetas
+- AST1
+- ALT1
+- ALT4
+- ALT12
+- ALT24
+- ALT36
+- ALT48
+- RNA Base
+- RNA 4
+- RNA 12
+- RNA EOT
+- RNA EF
+- Calificación histórica de referencia
+- Calificación histórica  
+
+### Resultados de EDA
+
+## EDAD
+Edad mínima: 32
+Edad máxima: 61
+
+Conclusión:
+Los datos no presentan una concentración en una edad en específico, encontré una gran cantidad de datos acumulados en la máxima edad "61", en comparación al resto de edades, sin embargo, esto no es índice de que la enfermedad tiende a presentarse en pacientes mayores a 60 años
+
+## GÉNERO
+
+Hombre    707
+Mujer     678
+
+Conclusión:
+Los datos tampoco presentan una concentración ningún género en particular
+
+### Mejor Modelo de Predicción : 
+Arbol de decisión del Objetivo1:
+
+<img width="436" height="207" alt="image" src="https://github.com/user-attachments/assets/0d3bfa75-8a6b-4ea2-8534-10ff6d2c4d9f" />
+
+Conclusión: 
+Luego de aplicar reglas en los síntomas, y de utilizar un data set nuevo y aleatorio, para poder poner a prueba, este mismo empezó a detectar patrones teniendo casi un 90% de precisión
+Y también podemos observar que llegó a un poco más de 85 de promedio, lo que para la rama de salud es un resultado muy positivo.
+
+### Peor Modelo de Predicción:
+Arbol de decisión del Objetivo2:
+
+<img width="446" height="175" alt="image" src="https://github.com/user-attachments/assets/f0753629-75ab-4d37-8c4d-ae2ff32fd10f" />
+
+Este modelo es el peor ya que tiene un mal promedio de predicción y a su vez encontramos que es muy similar a intentar predecir con azar. Esto se debe a que el objetivo en sí, está mal planteado, estoy observando sintomas del presente y queriendo adivinar el futuro, cosa que en la rama de salud es muy cambiante.
+La idea que intenté plantear es muy interesante pero el resultado contiene muchos fallos
+
+Mejorías :
+- Aumentar la cantidad de registros
+- Agregar pacientes SIN Hepatitis C
+- Agregar Síntomas o columnas con diferentes enfermedades
+
+ Mejoría Personal: 
+- Debo mejorar el orden de las tareas y tener una organización más clara
+- Debo de mejorar mis archivos, que sean más claros que información está intentando entregar
