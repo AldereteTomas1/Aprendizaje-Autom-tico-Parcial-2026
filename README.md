@@ -9,11 +9,15 @@ https://drive.google.com/file/d/1vFB2HqSpM3axLKdPmdDNpv0bewfU4xf1/view?usp=shari
 
 ## Objetivo: 
 
-Crear un modelo de aprendizaje que pueda detectar si un paciente con Hepatitis C, tiene el síntoma de Ictericia a partir de la información de los demás síntomas.
+Predecir si un paciente recién ingresado, tiene el sintoma de Ictericia.
 
 ## Objetivo2: 
 
-Crear un modelo de aprendizaje que pueda detectar si un paciente fué curado en la semana 12 del tratamiento. 
+Predecir si un paciente en la Semana 12 de sus análisis está curado.
+
+## Objetivo 3:
+
+Predecir si un paciente en la Semana 12 está curado, con la información del dataset completo.
 
 
 ### Pasos:
